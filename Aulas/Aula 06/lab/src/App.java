@@ -1,7 +1,6 @@
 public class App {
-    public static void main(String[] args) throws Exception { //o throws Exception - o código continua
+    public static void main(String[] args) throws Exception {
         Sistema sistema = new Sistema();
-        sistema.run(); 
-        
+        sistema.run();
     }
 }

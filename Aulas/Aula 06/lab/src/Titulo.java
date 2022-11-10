@@ -1,39 +1,28 @@
 import java.time.LocalDate;
 
 public class Titulo {
-    //Atributos
+    //conta que precisa ser paga = valor, data de vencimento e multa
     private double valor;
-    private double multaDiaria;
     private LocalDate data;
-    
-    // Construtor
-    public Titulo(double valor, LocalDate data, double multaDiaria){
-        this.setValor(valor);
-        this.setData(data);
-        this.setMultaDiaria(multaDiaria);
-    }
+    private double multaDiaria;
 
-    public LocalDate getData() {
-        return data;
-    }
-
-    private void setData(LocalDate data) {
+    //Precisamos de uma data
+    public Titulo(double valor, LocalDate data, double multaDiaria) {
+        this.valor = valor;
         this.data = data;
+        this.multaDiaria = multaDiaria;
     }
 
     public double getMultaDiaria() {
         return multaDiaria;
     }
 
-    private void setMultaDiaria(double multaDiaria) {
-        this.multaDiaria = multaDiaria;
+    public LocalDate getData() {
+        return data;
     }
 
     public double getValor() {
         return valor;
     }
 
-    private void setValor(double valor) {
-        this.valor = valor;
-    }
 }
