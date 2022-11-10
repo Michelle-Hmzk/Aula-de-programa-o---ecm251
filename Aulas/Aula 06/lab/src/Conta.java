@@ -32,7 +32,6 @@ public class Conta {
         if(!destino.depositar(valor)) return false;
         return true;
     }
-
     public String toString(){
         return "Conta Numero:" + numero + 
         "\n Saldo:" + visualizarSaldo() + 

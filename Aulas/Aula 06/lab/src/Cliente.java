@@ -1,39 +1,42 @@
 public class Cliente {
+    // atributos da classe
     private String cpf;
     private String nome;
     private String email;
 
-    public Cliente(String nome, String cpf, String email){
+    //construtor
+    public Cliente(String nome, String cpf, String email) {
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
     }
 
-    public void visualizarCliente(){
+    // feito para visualizar as informações
+    public void visualizarCliente() {
         System.out.println("Dados do Cliente:");
         System.out.println("Nome:" + nome);
         System.out.println("CPF:" + cpf);
         System.out.println("E-mail:" + email);
     }
 
-    public String getNome(){
+    // retorna o nome
+    public String getNome() {
         return nome;
     }
-
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String getCpf(){
+    // retorna o cpf
+    public String getCpf() {
         return cpf;
     }
-    public String getEmail(){
+
+    // retorna o email
+    public String getEmail() {
         return email;
     }
-   
-    public void setEmail(String email){
+    public void setEmail(String email) {
         this.email = email;
     }
-    
-
 }
